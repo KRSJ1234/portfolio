@@ -4,19 +4,56 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <style>
+
+        body{
+            background-color: rgb(36, 34, 32);
+        }
         .heading{
             color: black;
             font-size: 50px;
             font-family: 'Redressed', cursive;
+            text-align: center;
+            font-weight: 10;
+        }
+        .heading:hover{
+            color: pink;
+            font-size: 50px;
+            font-family: 'Redressed', cursive;
+            text-align: center;
+            border: 1px solid  #ccc;
+            font-weight: 10;
         }
         .writings{
-            color: red;
+            color: rgb(223, 160, 23);
             font-size: 12px;
             font-family: 'Redressed', cursive;
+
+            
         }
         .logo_style{
             border-radius: 50%;
             width: 50px;
+
+        }
+
+    
+
+        .portfolio{
+            width: 50px;
+            float: right;
+        }
+        .works{
+            width: 40px;
+            float: right;
+        }
+        .about{
+            width: 40px;
+            float: right;
+            
+        }
+        .descr{
+            float: left;
+            position: relative;
 
         }
     </style>
@@ -24,15 +61,17 @@
 <body>
 
     
-    <h1 class="heading">
+    <div><h1 >
         <img src="KJ.png" alt="custom logo by Kevin" class="logo_style">
-        My Portfolio
-    </h1>
+    </h1></div>
+    
     <main>
-        <p class="writings">Hello, My name is Kevin Jose</p>
-        <p class="writings">About</p>
-        <p class="writings">Works</p>
-        <p class="writings">Portfolio</p>
+        <div><p class="writings about">About</p></div>
+        <div><p class="writings portfolio">Portfolio</p></div>
+        
+        <div><p class="writings works">Works</p></div>
+        <div><p class="writings descr">Hello, My name is Kevin Jose</p></div>
+       
         
     </main>
 </body>
