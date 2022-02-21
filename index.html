@@ -6,7 +6,9 @@
     <style>
 
         body{
-            background-color: rgb(36, 34, 32);
+            background: url("background.png");
+            background-size: 100%;
+            
         }
         .heading{
             color: black;
@@ -33,23 +35,34 @@
         .logo_style{
             border-radius: 50%;
             width: 50px;
+            margin: auto;
+            display: block;
 
         }
 
     
 
         .portfolio{
-            width: 50px;
+            width: 100px;
             float: right;
+        }
+        .portfolio:hover{
+            transform: scale(1.2);
         }
         .works{
-            width: 40px;
+            width: 100px;
             float: right;
         }
+        .works:hover{
+            transform: scale(1.2);
+        }
         .about{
-            width: 40px;
+            width: px;
             float: right;
             
+        }
+        .about:hover{
+            transform: scale(1.2);
         }
         .descr{
             float: left;
@@ -66,15 +79,15 @@
 <body>
 
     
-    <div><h1 >
+    <div>
         <img src="KJ.png" alt="custom logo by Kevin" class="logo_style">
-    </h1></div>
+    </div>
     
     <main>
-        <div><p class="writings about">About</p></div>
-        <div><p class="writings portfolio">Portfolio</p></div>
+        <div><p class="writings about">ABOUT</p></div>
+        <div><p class="writings portfolio">PORTFOLIO</p></div>
         
-        <div><p class="writings works">Works</p></div>
+        <div><p class="writings works">WORKS</p></div>
         <div><p class="writings descr">Hello, My name is Kevin Jose</p></div>
        
         
