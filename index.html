@@ -43,21 +43,21 @@
     
 
         .portfolio{
-            width: 100px;
+            width: auto;
             float: right;
         }
         .portfolio:hover{
             transform: scale(1.2);
         }
         .works{
-            width: 100px;
+            width: auto;
             float: right;
         }
         .works:hover{
             transform: scale(1.2);
         }
         .about{
-            width: px;
+            width: auto;
             float: right;
             
         }
@@ -67,12 +67,26 @@
         .descr{
             float: left;
             position: relative;
+            
 
         }
         .logo_style{
             border-radius: 50%;
             width: 50px;
 
+        }
+        #flexbox-heading-main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            
+        }
+
+        .gap{
+            width: 50%;
+        }
+        .gap2{
+            width: 10%;
         }
     </style>
 </head>
@@ -84,11 +98,16 @@
     </div>
     
     <main>
-        <div><p class="writings about">ABOUT</p></div>
-        <div><p class="writings portfolio">PORTFOLIO</p></div>
+        <div id="flexbox-heading-main">
+            <div><h3 class="writings descr">Hello, My name is Kevin Jose</h3></div>
+            <div class="gap"></div>
+            <div><h3 class="writings about">ABOUT</h3></div>
+            <div class="gap2"></div>
+            <div><h3 class="writings portfolio">PORTFOLIO</h3></div>
+            <div class="gap2"></div>
+            <div><h3 class="writings works">WORKS</h3></div>
+        </div>
         
-        <div><p class="writings works">WORKS</p></div>
-        <div><p class="writings descr">Hello, My name is Kevin Jose</p></div>
        
         
     </main>
